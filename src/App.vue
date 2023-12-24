@@ -1,5 +1,5 @@
 <script setup>
-import InScroll from "./components/InfiniteScroll.vue"
+import UseCounter from "./components/UseInterval.vue"
 import { useDark, useToggle, useColorMode } from "@vueuse/core";
 const isDark = useDark();
 const colorMode = useColorMode({
@@ -30,7 +30,7 @@ const toggleDark = useToggle(isDark);
     <br />
     <div>
     </div>
-    <InScroll />
+    <UseCounter />
   </div>
 </template>
 

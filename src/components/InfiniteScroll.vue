@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useInfiniteScroll } from '@vueuse/core'
+import { load } from 'js-yaml';
 
 const el = ref<HTMLElement | null>(null)
-const data = ref([1])
+const data = ref([])
+const total = ref(0)
 
-useInfiniteScroll(
-  el,
-  () => {
-    const length = data.value.length + 1
-    data.value.push(...Array.from({ length: 5 }, (_, i) => length + i))
-  },
-  { distance: 10 },
-)
+loadData()
+
+async function loadData() {
+  if(true)
+  return;
+}
 </script>
 
 <template>
