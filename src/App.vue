@@ -1,5 +1,5 @@
 <script setup>
-import UseCounter from "./components/UseInterval.vue"
+import History from "./components/RefHistory.vue";
 import { useDark, useToggle, useColorMode } from "@vueuse/core";
 const isDark = useDark();
 const colorMode = useColorMode({
@@ -30,7 +30,7 @@ const toggleDark = useToggle(isDark);
     <br />
     <div>
     </div>
-    <UseCounter />
+    <History />
   </div>
 </template>
 
